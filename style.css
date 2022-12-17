@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  overflow: hidden;
+}
+.app {
+  background-color:rgb(106, 188, 226);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+  position: relative;
+}
+.boards {
+  display: flex;
+  width: 100%;
+}
+.boards__item {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.3 all ease;
+  border-radius: 3px;
+ 
+}
+.title {
+  padding: 5px;
+}
+.title:focus{
+  min-height: 40px;
+}
+
+.list {
+  min-height: 40px;
+}
+
+.list__item {
+  background-color: #fefefe;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+.form {
+  border-radius: 3px;
+  margin-top: auto;
+  display: none;
+  /* display: block; */
+}
+.textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  padding: 0;
+  width: 100%;
+
+}
+.textarea :focus{
+  outline: none;
+}
+.buttons {
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  width: 150px;
+  cursor: pointer;
+}
+.add__item-btn {
+  background-color: rgb(13,136,218);
+  bottom: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border:none;
+}
+.cancel__item-btn {
+  padding: 0 10px;
+  background-color:rgb(160, 17, 12);
+  cursor: pointer;
+  bottom: none;
+  height: 35px;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  width: 75px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  border:none;
+}
+.add__btn {
+  height: 35px;
+  background-color: rgba(155,155,155, 0.3);
+  border: radius 3px;
+  margin-top: 5px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding-left: 10px;
+  color: #fff;
+  cursor: pointer;
+  border:none;
+
+}
+
+.button{
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(19,30,204, 0.6);
+  width: 150px;
+  border:none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  border: radius 3px;
+  color: #fff;
+  font-size: 14px;
+
+}
